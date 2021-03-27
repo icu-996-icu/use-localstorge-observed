@@ -1,21 +1,20 @@
 import * as React from "react";
 
-export const useMyHook = () => {
-  let [{ counter }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
+type PropType = string;
+
+export const useMyHook = (props: PropType) => {
+  let [state, setState] = React.useState<Boolean>(false);
 
   React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({ counter });
-    }, 1000);
-    return () => {
-      window.clearInterval(interval);
+    const observiceChange = (e: any) => {
+      const { key } = e;
+      setState(key === props);
     };
-  }, []);
+    window.addEventListener("storage", observiceChange);
+    return () => {
+      window.removeEventListener("storage", observiceChange);
+    };
+  }, [props]);
 
-  return counter;
+  return state;
 };
