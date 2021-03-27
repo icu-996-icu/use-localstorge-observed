@@ -1,4 +1,13 @@
 # use-localstorge-observed
 
-监听 localstorage 的更改
-测试
+use
+
+```
+npm install use-localstorge-observed
+// or
+yarn install use-localstorge-observed
+```
+
+```
+const isChange = useLocalstorgeObserved('token')
+```
