@@ -1,14 +1,13 @@
 {
-  "name": "{{name}}-example",
-  "homepage": "https://{{author}}.github.io/{{name}}",
+  "name": "use-localstorge-observed-example",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "react": "{{#if yarn}}link:../node_modules/react{{else}}file:../node_modules/react{{/if}}",
+    "react": "link:../node_modules/react",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1",
-    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+    "use-localstorge-observed": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,12 +1,13 @@
 import React from 'react'
 
-import { useMyHook } from '{{name}}'
+import useLocalstorgeObserved from 'use-localstorge-observed'
 
 const App = () => {
-  const example = useMyHook()
+  const isChange = useLocalstorgeObserved("token")
+  console.log(isChange)
   return (
     <div>
-      {example}
+     sasas
     </div>
   )
 }
