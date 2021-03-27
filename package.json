@@ -1,6 +1,6 @@
 {
   "name": "use-localstorge-observed",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Listen for localStorage changes",
   "author": "ofoer",
   "license": "",
