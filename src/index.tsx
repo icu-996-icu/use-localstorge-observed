@@ -1,19 +1,23 @@
 import * as React from "react";
 
-type OptionType = string;
+interface OptionType {
+  keyName: string
+}
+
 const useLocalStorageObserved = (option: OptionType) => {
+  const { keyName } = option
   let [state, setState] = React.useState<Boolean>(false);
 
   React.useEffect(() => {
     const observiceChange = (e: any) => {
       const { key } = e;
-      setState(key === option);
+      setState(key === keyName);
     };
     window.addEventListener("storage", observiceChange);
     return () => {
       window.removeEventListener("storage", observiceChange);
     };
-  }, [option]);
+  }, [option.keyName]);
 
   return state;
 };
