@@ -1,8 +1,8 @@
 {
   "name": "use-localstorge-observed",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Listen for localStorage changes",
-  "author": "ofoer",
+  "author": "icu-996-icu",
   "license": "",
   "repository": "git@github.com:icu-996-icu/use-localstorge-observed.git",
   "main": "dist/index.js",
