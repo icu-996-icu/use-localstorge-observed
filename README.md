@@ -8,6 +8,9 @@ npm install use-localstorge-observed
 yarn install use-localstorge-observed
 ```
 
-```
-const isChange = useLocalstorgeObserved('token')
+```typescript
+
+const isChange:Boolean = useLocalstorgeObserved({keyName:'token'})
+
+// output true or false
 ```
