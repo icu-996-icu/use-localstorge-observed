@@ -1,6 +1,6 @@
 {
   "name": "use-localstorge-observed",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Listen for localStorage changes",
   "author": "icu-996-icu",
   "license": "",
