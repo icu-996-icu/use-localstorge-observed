@@ -14,3 +14,5 @@ const isChange:Boolean = useLocalstorgeObserved({keyName:'token'})
 
 // output true or false
 ```
+
+Triggered when other windows change
